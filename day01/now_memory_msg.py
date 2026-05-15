@@ -1,8 +1,7 @@
-from day06.tools import call_llm
+from day01.tools import call_llm
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser
 from langchain_community.chat_message_histories import ChatMessageHistory
-from langchain_core.runnables import RunnableWithMessageHistory
 
 input_messages_key = 'content'
 history_messages_key = 'history_contents'
