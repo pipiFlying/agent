@@ -5,6 +5,7 @@ llm = ChatOpenAI(
     model='qwen3.5-35b-a3b',
     base_url='https://dashscope.aliyuncs.com/compatible-mode/v1',
     api_key=API_KEY,
+    streaming=True,
 )
 
 def call_llm():
