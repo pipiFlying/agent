@@ -1,7 +1,7 @@
 # dify requirements
 # Usage: pip install -r requirements.txt
 
-# pip install langchain langchain-community langgraph -i https://mirrors.aliyun.com/pypi/simple/
+# pip install langchain langchain-community langgraph langchain-chroma -i https://mirrors.aliyun.com/pypi/simple/
 
 # Base ------------------------------------------------------------------------
 

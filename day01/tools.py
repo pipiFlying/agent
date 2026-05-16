@@ -1,4 +1,5 @@
 from langchain_openai import ChatOpenAI
+from langchain_openai import OpenAIEmbeddings
 
 API_KEY = 'sk-884fc943c8504efeba0d66a99eb9d2b2'
 llm = ChatOpenAI(
@@ -8,8 +9,18 @@ llm = ChatOpenAI(
     streaming=True,
 )
 
+embedding = OpenAIEmbeddings(
+    model='text-embedding-v3',
+    base_url='https://dashscope.aliyuncs.com/compatible-mode/v1',
+    api_key=API_KEY,
+    check_embedding_ctx_length=False,
+)
+
 def call_llm():
     return llm
+
+def call_embedding():
+    return embedding
 
 if __name__ == '__main__':
     messages = [
